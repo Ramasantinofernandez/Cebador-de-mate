@@ -2896,6 +2896,139 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_SPST"
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Single Pole Single Throw (SPST) switch"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SPST_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0.254) (xy 1.524 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SW_SPST_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Transistor_FET:2N7000"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -3583,6 +3716,12 @@
 		(uuid "489f4b25-b0da-4bff-a911-429fb55a8519")
 	)
 	(junction
+		(at 31.75 176.53)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5e499d28-6650-47b6-b24d-bacaeb1ee60a")
+	)
+	(junction
 		(at 93.98 186.69)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3904,7 +4043,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 177.8) (xy 27.94 176.53)
+			(xy 31.75 176.53) (xy 31.75 175.26)
 		)
 		(stroke
 			(width 0)
@@ -4464,7 +4603,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 180.34) (xy 27.94 182.245)
+			(xy 31.75 179.07) (xy 31.75 180.975)
 		)
 		(stroke
 			(width 0)
@@ -4911,6 +5050,16 @@
 			(type default)
 		)
 		(uuid "db412a6b-04a3-48e3-83cb-14b4477e26c5")
+	)
+	(wire
+		(pts
+			(xy 30.48 176.53) (xy 31.75 176.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc17bb9e-0b6e-4043-84d4-61a97b902bef")
 	)
 	(wire
 		(pts
@@ -5578,7 +5727,7 @@
 	)
 	(global_label "GPIO35"
 		(shape input)
-		(at 121.92 156.21 180)
+		(at 121.92 161.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5588,7 +5737,7 @@
 		)
 		(uuid "75f2abca-96f9-4944-88f5-59c0f53abb89")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.0405 156.21 0)
+			(at 112.0405 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5688,7 +5837,7 @@
 	)
 	(global_label "GPIO33"
 		(shape input)
-		(at 121.92 161.29 180)
+		(at 121.92 166.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5698,7 +5847,7 @@
 		)
 		(uuid "8c4dc741-7cd4-4c9d-a279-8255099ddc93")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.0405 161.29 0)
+			(at 112.0405 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5798,7 +5947,7 @@
 	)
 	(global_label "GPIO32"
 		(shape input)
-		(at 121.92 158.75 180)
+		(at 121.92 163.83 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5808,7 +5957,7 @@
 		)
 		(uuid "9ec3a286-b505-4e64-a0c3-b6bbd7d71f08")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.0405 158.75 0)
+			(at 112.0405 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6216,7 +6365,7 @@
 	)
 	(global_label "GPIO34"
 		(shape input)
-		(at 121.92 153.67 180)
+		(at 121.92 158.75 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -6226,7 +6375,7 @@
 		)
 		(uuid "e89fade8-a0de-4958-9132-1d8f6ebde542")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 112.0405 153.67 0)
+			(at 112.0405 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8193,6 +8342,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 25.4 176.53 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e58769d-872c-46d1-9eb5-18250f3d9a07")
+		(property "Reference" "SW1"
+			(at 25.4 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 25.4 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 25.4 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 25.4 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 25.4 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1f222ce9-8097-4421-b669-1e5a032dbd96")
+		)
+		(pin "1"
+			(uuid "65b76f91-0487-4dc2-8c1f-66f229aade45")
+		)
+		(instances
+			(project ""
+				(path "/3fb1f07d-b939-40dd-b220-aa81ef24414e"
+					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:2N7000")
 		(at 67.945 113.03 0)
 		(unit 1)
@@ -8269,7 +8486,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 27.94 176.53 0)
+		(at 31.75 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8278,7 +8495,7 @@
 		(fields_autoplaced yes)
 		(uuid "7624c710-816c-4c36-8fb7-9153765af28d")
 		(property "Reference" "#PWR08"
-			(at 27.94 180.34 0)
+			(at 31.75 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8287,7 +8504,7 @@
 			)
 		)
 		(property "Value" "12V"
-			(at 27.94 171.45 0)
+			(at 31.75 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8295,7 +8512,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 27.94 176.53 0)
+			(at 31.75 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8304,7 +8521,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 176.53 0)
+			(at 31.75 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8313,7 +8530,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 27.94 176.53 0)
+			(at 31.75 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9797,7 +10014,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 27.94 182.245 0)
+		(at 31.75 180.975 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9805,7 +10022,7 @@
 		(dnp no)
 		(uuid "ae2aafb0-797a-41d6-9d5a-a0340ef70970")
 		(property "Reference" "#PWR07"
-			(at 27.94 188.595 0)
+			(at 31.75 187.325 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9814,7 +10031,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 29.845 186.055 0)
+			(at 33.655 184.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9823,7 +10040,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 27.94 182.245 0)
+			(at 31.75 180.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9832,7 +10049,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 27.94 182.245 0)
+			(at 31.75 180.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9841,7 +10058,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 182.245 0)
+			(at 31.75 180.975 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10729,7 +10946,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 33.02 177.8 0)
+		(at 36.83 176.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10738,7 +10955,7 @@
 		(fields_autoplaced yes)
 		(uuid "d08f535f-edea-4a5d-a790-0c1425921298")
 		(property "Reference" "J1"
-			(at 35.56 177.7999 0)
+			(at 39.37 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10747,7 +10964,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 35.56 180.3399 0)
+			(at 39.37 179.0699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10756,7 +10973,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm"
-			(at 33.02 177.8 0)
+			(at 36.83 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10765,7 +10982,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 33.02 177.8 0)
+			(at 36.83 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10774,7 +10991,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 33.02 177.8 0)
+			(at 36.83 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
